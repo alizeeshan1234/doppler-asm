@@ -14,7 +14,7 @@ mod tests {
 
     #[test]
     fn oracle_update() {
-        let program_id_keypair_bytes = std::fs::read("deploy/doppler-asm-keypair.json").unwrap()
+        let program_id_keypair_bytes = std::fs::read("./key.json").unwrap()
             [..32]
             .try_into()
             .expect("slice with incorrect length");
